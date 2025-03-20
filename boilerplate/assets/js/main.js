@@ -148,7 +148,6 @@ function clearMainView(mainView){
 
 function projectElementClicked(event){
 	let mainView = document.getElementById("mainView");
-	mainView.scrollIntoView({behavior: 'smooth'});
 
 	let element = event.srcElement;
 	let parent = element.parentElement;
@@ -157,7 +156,7 @@ function projectElementClicked(event){
 
 	// catch case for if the main view is open
 	if (clearMainView(mainView)){
-		//if the el
+		//if the button was reclicked
 		if(holder.id == focusedElement.id){
 			console.log("Removing focused element")
 			focusedElement = null;
@@ -171,6 +170,9 @@ function projectElementClicked(event){
 	focusedElement = holder
 
 	let clone = holder.cloneNode(true);
+	let titleText = clone.querySelector("h3");
+	titleText.style.fontSize = "1.5em";
+
 	clone.addEventListener("click", projectElementClicked)
 	let cloneText = Array.from(clone.getElementsByClassName("hiddenText"));
 
@@ -180,10 +182,10 @@ function projectElementClicked(event){
 	});
 
 	holder.style.display = "none";
-	mainView.appendChild(clone)
-	holder.classList.add("focused_project")
+	mainView.appendChild(clone);
+	holder.classList.add("focused_project");
 	
-
+	mainView.scrollIntoView({behavior: 'smooth'});
 }
 
 
