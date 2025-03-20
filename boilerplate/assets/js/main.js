@@ -148,6 +148,7 @@ function clearMainView(mainView){
 
 function projectElementClicked(event){
 	let mainView = document.getElementById("mainView");
+	mainView.scrollIntoView({behavior: 'smooth'});
 
 	let element = event.srcElement;
 	let parent = element.parentElement;
@@ -185,13 +186,11 @@ function projectElementClicked(event){
 
 }
 
-function setupPortfolioButtonEvents(event){
 
-}
 function setupEvents(){
 	let projectButtons = Array.from(document.getElementsByClassName("project_button"));
 	projectButtons.forEach(btn => {
-		btn.addEventListener("click", projectElementClicked)
+		btn.addEventListener("click", projectElementClicked);
 	});
 	document.getElementById("email_form").addEventListener("submit", function(event){
 		event.preventDefault();

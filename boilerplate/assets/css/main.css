@@ -2650,7 +2650,13 @@ input, select, textarea {
 .project{
 	transition-duration: 1s;
 }
+#projects{
+	padding-top:10px;
+}
 
+body{
+	zoom:0.75;
+}
 /* When expanded, enlarge the image */
 
 .project_button{
