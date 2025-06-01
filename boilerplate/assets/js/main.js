@@ -121,7 +121,8 @@
 				});
 
 })(jQuery);
-
+const CLICK_THRESHOLD = 200; //ms
+var mouseDownTime = 0;
 let focusedElement = null;
 
 function setElementWidth(event){
@@ -145,14 +146,17 @@ function clearMainView(mainView){
 	return false;
 
 }
+function projectElementReleased(event){
+	let clickDuration = Date.now() - mouseDownTime;
+	if(clickDuration > CLICK_THRESHOLD || event.button === 2){
+		return;
+	}
 
-function projectElementClicked(event){
 	let mainView = document.getElementById("mainView");
 
-	let element = event.srcElement;
+	let element = event.target;
 	let parent = element.parentElement;
 	let holder = parent.parentElement;
-
 
 	// catch case for if the main view is open
 	if (clearMainView(mainView)){
@@ -171,9 +175,18 @@ function projectElementClicked(event){
 
 	let clone = holder.cloneNode(true);
 	let titleText = clone.querySelector("h3");
-	titleText.style.fontSize = "1.5em";
-
-	clone.addEventListener("click", projectElementClicked)
+	let video = clone.querySelector("video");
+	if(video){
+		video.currentTime = 0
+		video.loop = true;
+		video.play();
+	}
+	if(titleText){
+		titleText.style.fontSize = "1.5em";
+	}
+	clone.addEventListener("mousedown", projectElementClicked)
+	clone.addEventListener("mouseup", projectElementReleased)
+	clone.querySelector("video");
 	let cloneText = Array.from(clone.getElementsByClassName("hiddenText"));
 
 	//incase there is no hidden text or multiple blocks of hiddent ext
@@ -187,17 +200,43 @@ function projectElementClicked(event){
 	
 	mainView.scrollIntoView({behavior: 'smooth'});
 }
+function projectElementClicked(event){
+	if(event.button === 2){
+		return //ignore right clicks
+	}
+	mouseDownTime = Date.now()
+}
 
 
 function setupEvents(){
 	let projectButtons = Array.from(document.getElementsByClassName("project_button"));
 	projectButtons.forEach(btn => {
-		btn.addEventListener("click", projectElementClicked);
+		btn.addEventListener("mousedown", projectElementClicked);
+		btn.addEventListener("mouseup", projectElementReleased);
 	});
 	document.getElementById("email_form").addEventListener("submit", function(event){
 		event.preventDefault();
 		email();
 	});
+
+	const videos = document.querySelectorAll("video")
+	videos.forEach(videoElem => {
+		let projectName = videoElem.closest("article")?.id
+
+		switch(projectName){
+			case "mazeGame":
+				videoElem.currentTime = 5;
+				break;
+			case "holdemDQN":
+				videoElem.currentTime = 20;
+				break;
+			case "cultureSim":
+				videoElem.currentTime = 30;
+				break;
+			
+		}
+	});
+
 }
 
 function email(){

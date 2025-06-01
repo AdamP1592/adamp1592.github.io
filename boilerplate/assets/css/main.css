@@ -2663,7 +2663,9 @@ body{
 	padding:0;
 	transition: transform 0.5s ease;
 }
-
+.project_button>video{
+	width:100%;
+}
 /* When expanded, the text container expands with its own scroll if needed */
 .project.expanded .project-text {
   max-height: 200px;  /* Adjust the height as needed */
@@ -2674,4 +2676,8 @@ body{
 	display:none;
 	background-color:white;
 	margin-bottom:5px;
+	padding: 5px;
+}
+strong{
+	font-weight:500;
 }

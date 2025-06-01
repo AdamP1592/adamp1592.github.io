@@ -59,7 +59,7 @@
 
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Adam</strong>, a software engineer!<br />
-								<p>Hi, I'm Adam Peterson—a passionate software engineer with a lifelong love for coding. Whether it's building a neural network from scratch or simulating complex neuron behaviors, I thrive on transforming innovative concepts into functional, real-world solutions.</p>
+								<p>Hi, I'm Adam Peterson—a passionate software engineer with a lifelong love for coding. I thrive on transforming innovative concepts into functional, real-world solutions.</p>
 							</header>
 
 							<footer>
@@ -83,64 +83,116 @@
 								<div class="row">
 									<div class="col-4 col-12-mobile">
 										<article id ="cultureSim" class="item project">
-											<button class="image fit project_button"><img src="images/2d-culture-sim.PNG" alt="" /></button>
+											<button class="image fit project_button"><video src="video/Culture_Simulation_Video.mp4" alt="" /></button>
 											<header>
 												<h3>Corticospinal Culture Simulation</h3>
 											</header>
 
 											<div class="hiddenText">
-												A 2d corticospinal culture simulation project modeling a network of neurons with stimulation. This project uses a Hodgkin–Huxley neuron model with dynamic synapses based on the Tsodyks–Markram model. It combines biophysical modeling, computational geometry for connectivity, and a Flask backend API to serve a webpage interface
-												Find the project here! ->
+												<strong>Technologies: </strong>
+												Python · Flask · NumPy · JavaScript · ECharts · Docker<br>
+												<strong>Skills: </strong>
+												Computational Neuroscience · Biophysical Modeling · Full-Stack Engineering · Web Visualization · RESTful API Design · Resource Optimization<br>
+												<strong>Topics & Concepts: </strong>
+												Hodgkin-Huxley Dynamics · AMPA/NMDA Synapses · Electrode-Stimulus Mapping · Buffered Data Rendering · Interactive Neural Visualization<br>
+												<strong>Project Description: </strong><br>
+												Simulates a 2D culture of corticospinal neurons using Hodgkin-Huxley membrane dynamics with both fast (AMPA) and voltage-dependent (NMDA) synaptic models. The system predicts steady-state membrane behavior under customizable external current input. A RESTful Flask API runs the simulation and streams results to a JavaScript frontend. The UI renders a live network map showing neurons, synapses, and connections, alongside synchronized graphs for input stimuli and membrane potential traces. Buffered rendering smooths playback and ensures responsiveness under limited system resources. Users can insert electrodes via the UI to observe how stimulus location and strength affect network dynamics.
+												<br>
+												<a href="https://adamp1592.pythonanywhere.com/home">Try the demo</a> and on Github here ->
 												<a href="https://github.com/AdamP1592/Network-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
 										</article>
-										<article id = "neural-network" class="item project">
+										<article id = "neuralNetwork" class="item project">
 											<button class="image fit project_button"><img src="images/Neural-Network-From-Scratch.PNG" alt="" /></button>
 											<header>
-												<h3>Neural Network From Scratch</h3>
+												<h3><u>Neural Network From Scratch</u></h3>
 											</header>
-
+										
 											<div class="hiddenText">
-												This project is a neural network built from scratch, written in C++ with no external dependencies. Its current use is a regression classifier, using a leaky relu activation function and standard gradient descent backpropagation.<br>
+												<strong>Technologies: </strong><br>
+												C++ · STL(Standard Template Library) · Custom Header Architecture · Custom Logger<br>
+												<strong>Skills: </strong><br>
+												Supervised Learning · Feedforward Network Implementation · Low-Level Memory Management · Modular System Design · Custom Tooling · CLI Interface Design · JNI Integration<br>
+												<strong>Topics & Concepts: </strong>
+												Weight Initialization · RMSProp Optimization · Gradient Descent · Leaky ReLU · Tanh Activation · Batch Training · Stochastic Training · Activation Function Integration<br>
+												<strong>Project Description: </strong><br>
+												Built a modular feedforward neural network framework in C++ entirely from scratch with no external libraries. Supports batch-based supervised learning using both standard gradient descent and RMSProp optimization, configurable activation functions (Leaky ReLU, Tanh), and reference-based neuron connections. Includes a thread-safe, single-threaded custom logger for clean diagnostic output. Trained on the Iris dataset and visualized through a CLI interface that displays per-layer activations, error values, and expected outputs. Engineered for robustness, maintainability, and integration into larger AI pipelines.<br>
 												Find the project here! ->
 												<a href="https://github.com/AdamP1592/Neural-Network" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
 										</article>
 									</div>
 									<div class="col-4 col-12-mobile">
-										<article id = "neuron-simulation" class="item project">
-											<button class="image fit project_button"><img src="images/neuron-simulation.PNG" alt="" /></button>
+										<article id = "neuronSimulation" class="item project">
+											<button class="image fit project_button"><video src="video/NeuronSimulation.mp4" alt="" /></button>
 											<header>
 												<h3>Hodgkin-Huxley Neuron Simulation</h3>
 											</header>
 											<div class="hiddenText">
-												This is a standard hodgkin-huxley neuron simulation implementing squid-axon dynamics. It was written in python and the interface is matplotlib.<br>
-												Find the project here! -><a href="https://github.com/AdamP1592/Neuron-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												<strong>Technologies Used: </strong>
+												Python · Matplotlib · NumPy <br>
+												<strong>Skills: </strong>
+												Computational Neuroscience · Biophysical Modeling · Data Visualization · Real-Time Simulation · Scientific Programming · Software Engineering · Object-Oriented Design<br>
+												<strong>Topics & Concepts: </strong>
+												Hodgkin-Huxley Neuron Model · Action Potential Threshold Fitting · Ion Channel Dynamics · Time-Step Integration · Current Injection Modeling · Interactive Signal Tuning<br>
+												<strong>Project Description: </strong><br>
+												Built a modular Hodgkin-Huxley simulator for exploring the effects of different current injection profiles on neuronal membrane behavior. Includes selectable input types with slider-controlled amplitude and frequency, and a built-in routine to identify action potential thresholds. Visualizations update dynamically to show membrane potential, gating variable dynamics, and input current in sync. Designed for modular integration into larger neural simulation frameworks while remaining lightweight and self-contained as an educational tool.<br>
+												Find the project here! -> <a href="https://github.com/AdamP1592/Neuron-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
 										</article>
-										<article id = "synapse-generation" class="item project">
+										<article id = "synapseGeneration" class="item project">
 											<button class="image fit project_button"><img src="images/synaptic-generation.PNG" alt="" /></button>
 											<header>
-												<h3>Synaptic Generator</h3>
+												<h3>Neural Connectivity & Synaptic Dynamics Toolkit</h3>
 											</header>
 											<div class="hiddenText">
-												This is a framework I built to generate a potential distribution of synapses given microchannel alignement that uses area of overlap to generate a probability of generating a connection.<br>
-												Find the project here! -><a href="https://github.com/AdamP1592/Synapse" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												<strong>Technologies Used: </strong>
+												Python · NumPy · Matplotlib · Shapely<br>
+												<strong>Skills: </strong>
+												Computational Neuroscience · Geometric Simulation · Scientific Programming · Software Engineering · Object-Oriented Design<br>
+												<strong>Topics & Concepts: </strong>
+												Tsodyks-Markram Synapse · Short-Term Plasticity · Probabilistic Synaptogenesis · Axon-Dendrite Overlap · Spatial Neural Modeling · Recursive Geometric Intersection<br>
+												<strong>Project Description: </strong>
+												Developed a modular simulation toolkit for generating spatially grounded networks of neurons and modeling synaptic plasticity. Synapses form probabilistically based on geometric overlap between axonal and dendritic growth regions, modeled as semicircular polygons and analyzed using Shapely. Connection probabilities follow an exponential function of intersection area, and synapse positions are computed from centroid integrals. The system also implements the full Tsodyks–Markram model for short-term synaptic dynamics, including continuous recovery/facilitation and spike-triggered updates. Recursive refinement and duplicate resolution allow scalable connectivity analysis. Visualizations show neuron positions, projection zones, and connectivity structure.<br>
+												Find the project here! -> 
+												<a href="https://github.com/AdamP1592/Synapse" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
 										</article>
 									</div>
 									<div class="col-4 col-12-mobile">
-										<article class="item">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<article id = "mazeGame" class="item project">
+											<button class="image fit project_button"><video src="video/zoomedMazeGame.mp4" alt="" /></button>
 											<header>
-												<h3>Dolor Penatibus</h3>
+												<h3>Java Maze Game</h3>
 											</header>
+											<div class="hiddenText">
+												<strong>Technologies Used: </strong>
+												Java · Swing · OOP<br>
+												<strong>Skills: </strong>
+												Procedural Generation · Game Architecture · Pathfinding Algorithms · Interactive UI Design · Software Engineering<br>
+												<strong>Topics & Concepts: </strong>
+												Maze Generation · Prim’s Algorithm · Breadth-First Search · Game State Management · Tile-Based Interaction · 2D Rendering<br>
+												<strong>Project Description: </strong><br>
+												A 2D puzzle game featuring procedurally generated mazes with tile-based interactions and directional player movement. Mazes are generated using a variant of Prim’s Algorithm, with the player placed at the furthest tile from a randomly assigned goal via breadth-first search. Each maze includes special tiles—such as red (heal), purple (pause), and orange (damage over time)—that dynamically affect the player’s health, displayed as a numeric overlay. The game uses a modular entity system (Player, Goal, TrappedFloor, etc.) for extensible logic and visual behavior. Built with Java Swing for GUI layout, input handling, and animated tile rendering.<br>
+												Find the project here! -> <a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+											</div>
 										</article>
-										<article class="item">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<article id = "holdemDQN" class="item project">
+											<button class="image fit project_button"><video src="video/holdemVideo.mp4" alt="" /></button>
 											<header>
-												<h3>Orci Convallis</h3>
+												<h3>Texas Hold'em with Reinforcement Learning</h3>
 											</header>
+											<div class="hiddenText">
+												<strong>Technologies: </strong>
+												Python · TensorFlow · NumPy · Keyboard · Batch Scripting · PyInstaller<br>
+												<strong>Skills: </strong>
+												Reinforcement Learning · Evolutionary Optimization · Performance Optimization · Resource Management · Reward Engineering · Software Engineering · Object-Oriented Programming<br>
+												<strong>Topics & Concepts: </strong>
+												Dueling Double Deep Q-Networks (D3QN) · Epsilon-Greedy Exploration · Q-Value Decomposition · Simulation-Based Training · Experience Replay Buffers · Evolutionary Reward Function Optimization · Temporal Difference Learning · Poker State Encoding<br>
+												<strong>Project Description: </strong><br>
+												Developed a reinforcement learning framework for Texas Hold’em Poker using a Dueling Double Deep Q-Network (D3QN) architecture. Each agent is assigned a unique reward weight vector applied to a shared reward function. After each generation of self-play, underperforming reward vectors are replaced by mutated versions of top performers. Agents are retrained with these new reward structures, evolving generalizable strategies across generations. The environment supports full betting logic, discrete action encoding, and CLI integration for training or manual testing. A batch script checks for Python installation and version compatibility at runtime—defaulting to a PyInstaller-built executable only if necessary—to ensure optimal performance across systems. <br>
+												Find the project here! -><a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+											</div>
 										</article>
 									</div>
 								</div>
