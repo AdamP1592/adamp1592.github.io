@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Adam Peterson | Software Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,7 +20,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							
 							<h1 id="title">Adam Peterson</h1>
 							<p>Software Engineer</p>
 						</div>
@@ -59,7 +59,7 @@
 
 							<header>
 								<h2 class="alt">Hi! I'm <strong>Adam</strong>, a software engineer!<br />
-								<p>Hi, I'm Adam Peterson—a passionate software engineer with a lifelong love for coding. I thrive on transforming innovative concepts into functional, real-world solutions.</p>
+								<p>I'm a passionate software engineer with a lifelong love for coding. I thrive on transforming innovative concepts into functional, real-world solutions.</p>
 							</header>
 
 							<footer>
@@ -83,7 +83,7 @@
 								<div class="row">
 									<div class="col-4 col-12-mobile">
 										<article id ="cultureSim" class="item project">
-											<button class="image fit project_button"><video src="video/Culture_Simulation_Video.mp4" alt="" /></button>
+											<button class="image fit project_button"><video src="video/Culture_Simulation_Video.mp4" alt="" ></video></button>
 											<header>
 												<h3>Corticospinal Culture Simulation</h3>
 											</header>
@@ -94,9 +94,9 @@
 												<strong>Skills: </strong>
 												Computational Neuroscience · Biophysical Modeling · Full-Stack Engineering · Web Visualization · RESTful API Design · Resource Optimization<br>
 												<strong>Topics & Concepts: </strong>
-												Hodgkin-Huxley Dynamics · AMPA/NMDA Synapses · Electrode-Stimulus Mapping · Buffered Data Rendering · Interactive Neural Visualization<br>
+												Hodgkin-Huxley Dynamics · AMPA Synapses · Electrode-Stimulus Mapping · Buffered Data Rendering · Interactive Neural Visualization<br>
 												<strong>Project Description: </strong><br>
-												Simulates a 2D culture of corticospinal neurons using Hodgkin-Huxley membrane dynamics with both fast (AMPA) and voltage-dependent (NMDA) synaptic models. The system predicts steady-state membrane behavior under customizable external current input. A RESTful Flask API runs the simulation and streams results to a JavaScript frontend. The UI renders a live network map showing neurons, synapses, and connections, alongside synchronized graphs for input stimuli and membrane potential traces. Buffered rendering smooths playback and ensures responsiveness under limited system resources. Users can insert electrodes via the UI to observe how stimulus location and strength affect network dynamics.
+												Simulates a 2D culture of corticospinal neurons using Hodgkin-Huxley membrane dynamics with fast(AMPA) synaptic models. The system predicts steady-state membrane behavior under customizable external current input. A RESTful Flask API runs the simulation and streams results to a JavaScript frontend. The UI renders a live network map showing neurons, synapses, and connections, alongside synchronized graphs for input stimuli and membrane potential traces. Buffered rendering smooths playback and ensures responsiveness under limited system resources. Users can insert electrodes via the UI to observe how stimulus location and strength affect network dynamics.
 												<br>
 												<a href="https://adamp1592.pythonanywhere.com/home">Try the demo</a> and on Github here ->
 												<a href="https://github.com/AdamP1592/Network-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
@@ -105,7 +105,7 @@
 										<article id = "neuralNetwork" class="item project">
 											<button class="image fit project_button"><img src="images/Neural-Network-From-Scratch.PNG" alt="" /></button>
 											<header>
-												<h3><u>Neural Network From Scratch</u></h3>
+												<h3>Neural Network From Scratch</h3>
 											</header>
 										
 											<div class="hiddenText">
@@ -116,7 +116,7 @@
 												<strong>Topics & Concepts: </strong>
 												Weight Initialization · RMSProp Optimization · Gradient Descent · Leaky ReLU · Tanh Activation · Batch Training · Stochastic Training · Activation Function Integration<br>
 												<strong>Project Description: </strong><br>
-												Built a modular feedforward neural network framework in C++ entirely from scratch with no external libraries. Supports batch-based supervised learning using both standard gradient descent and RMSProp optimization, configurable activation functions (Leaky ReLU, Tanh), and reference-based neuron connections. Includes a thread-safe, single-threaded custom logger for clean diagnostic output. Trained on the Iris dataset and visualized through a CLI interface that displays per-layer activations, error values, and expected outputs. Engineered for robustness, maintainability, and integration into larger AI pipelines.<br>
+												Built a modular feedforward neural network framework in C++ entirely from scratch with no external libraries. Supports batch-based supervised learning using both standard gradient descent and RMSProp optimization, with configurable activation functions (Leaky ReLU, Tanh) and reference-based neuron connections. The framework is dataset-agnostic and validated on the Iris dataset to demonstrate core learning behavior. Includes a thread-safe, single-threaded custom logger for clean diagnostic output, and step-through CLI visualization of per-layer activations, error values, and expected outputs during training. JNI integration enables compatibility with external systems for hybrid AI workflows. Designed for robustness, maintainability, and integration into larger AI pipelines.<br>
 												Find the project here! ->
 												<a href="https://github.com/AdamP1592/Neural-Network" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
@@ -153,7 +153,7 @@
 												<strong>Topics & Concepts: </strong>
 												Tsodyks-Markram Synapse · Short-Term Plasticity · Probabilistic Synaptogenesis · Axon-Dendrite Overlap · Spatial Neural Modeling · Recursive Geometric Intersection<br>
 												<strong>Project Description: </strong>
-												Developed a modular simulation toolkit for generating spatially grounded networks of neurons and modeling synaptic plasticity. Synapses form probabilistically based on geometric overlap between axonal and dendritic growth regions, modeled as semicircular polygons and analyzed using Shapely. Connection probabilities follow an exponential function of intersection area, and synapse positions are computed from centroid integrals. The system also implements the full Tsodyks–Markram model for short-term synaptic dynamics, including continuous recovery/facilitation and spike-triggered updates. Recursive refinement and duplicate resolution allow scalable connectivity analysis. Visualizations show neuron positions, projection zones, and connectivity structure.<br>
+												Developed a modular toolkit for generating neural connectivity from any specified neuron distribution, identifying probable synapse formation based on geometric overlap of axonal and dendritic projections. Connection probabilities follow an exponential function of intersection area, with synapse positions computed from centroid integrals. Implements the full Tsodyks–Markram model for short-term synaptic dynamics, including continuous recovery, facilitation, and spike-triggered updates. Recursive refinement and duplicate resolution ensure scalable, reliable connectivity generation. Designed for integration into larger neural simulation frameworks, like my corticospinal neuron simulation, supporting dynamic, probabilistic network construction for both demonstration and biologically informed models.<br>
 												Find the project here! -> 
 												<a href="https://github.com/AdamP1592/Synapse" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
@@ -173,7 +173,7 @@
 												<strong>Topics & Concepts: </strong>
 												Maze Generation · Prim’s Algorithm · Breadth-First Search · Game State Management · Tile-Based Interaction · 2D Rendering<br>
 												<strong>Project Description: </strong><br>
-												A 2D puzzle game featuring procedurally generated mazes with tile-based interactions and directional player movement. Mazes are generated using a variant of Prim’s Algorithm, with the player placed at the furthest tile from a randomly assigned goal via breadth-first search. Each maze includes special tiles—such as red (heal), purple (pause), and orange (damage over time)—that dynamically affect the player’s health, displayed as a numeric overlay. The game uses a modular entity system (Player, Goal, TrappedFloor, etc.) for extensible logic and visual behavior. Built with Java Swing for GUI layout, input handling, and animated tile rendering.<br>
+												A 2D puzzle game featuring procedurally generated mazes with tile-based interactions and directional player movement. Mazes are generated using a variant of Prim’s Algorithm, with the player placed at the furthest tile from a randomly assigned goal via breadth-first search. Each maze includes special tiles—red (heal), purple (pause), orange (damage over time)—that dynamically affect player health, displayed as a numeric overlay. Movement is player-controlled without assistive pathfinding. The game uses a modular entity system (Player, Goal, TrappedFloor) for extensible logic and visual behavior. Maze size and complexity are configurable at runtime for scalable generation. Built with Java Swing for GUI layout, input handling, and animated tile rendering.<br>
 												Find the project here! -> <a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
 											</div>
 										</article>
@@ -211,15 +211,16 @@
 							<a href="#" class="image featured"><img src="images/motivation-code.jpg" alt="" /></a>
 							<h3> Hi, I'm Adam Peterson</h3>
 							<p>
-								I'm a passionate software engineer driven by innovation and a relentless pursuit of learning. I started programming at 14 because I saw it as a way to turn any idea into reality. Today, I focus on projects that push the boundaries of technology and explore the intersection of science and engineering.
+								I’m a software engineer specializing in simulation systems, modular system design, and machine learning frameworks — building tools that bridge science, engineering, and software. My work focuses on projects that push the boundaries of technology and explore the intersection of computation and applied science.
 								<br>
-								My technical expertise spans Python and C++, with hands-on experience in Java, C, and full-stack web development (HTML, CSS, JavaScript + jQuery). My toolkit also includes Docker, Kubernetes, Django, SQL and NoSQL databases, Git, Flask, and MongoDB. Beyond technical proficiency, I bring strong problem-solving skills, critical thinking, and adaptability—qualities honed by years of self-teaching and diving into scientific research.
+								My core expertise is in Python and C++, with additional experience in Java, C, and full-stack development. I use tools like Docker, Kubernetes, Flask, and SQL/NoSQL systems to create scalable, maintainable solutions.
 								<br>
-								I pride myself on my ability to learn independently and apply knowledge from diverse sources, from scientific papers on scalable pipelines for reconfigurable organisms to innovative neuro-simulation techniques. This continuous learning mindset is not just a skill for me—it’s a lifestyle that fuels my creativity and drive.
+								I take pride in my ability to learn independently and apply knowledge from diverse sources — from scientific papers like “Nano structures via laser interference patterning for guided cell growth of neuronal cells” (which informed my synapse connection predictor toolkit) to advanced neuro-simulation techniques. This continuous learning mindset fuels my creativity and technical growth.
 								<br>
-								In addition to my technical and analytical abilities, my hands-on work as a garage door technician and carpenter has strengthened my communication, collaboration, and resilience. These roles have taught me to approach challenges pragmatically, work well under pressure, and value teamwork—qualities that are essential for any successful project.
+								Beyond software, my hands-on work as a garage door technician and carpenter strengthened my problem-solving skills, resilience, and collaborative approach to engineering challenges.
 								<br>
-								Outside of work, I enjoy exploring the outdoors, fishing, and kayaking, which helps me recharge and gain new perspectives. I'm eager to collaborate on groundbreaking projects that blend technical innovation with creative problem-solving. If you'd like to connect or learn more about my work, feel free to reach out.</p>
+								Outside of work, I recharge by exploring the outdoors, fishing, and kayaking. I’m eager to contribute to projects that blend technical innovation with creative, pragmatic problem-solving — feel free to reach out.
+							</p>
 
 						</div>
 					</section>
