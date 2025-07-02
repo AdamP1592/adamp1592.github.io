@@ -148,7 +148,7 @@ function clearMainView(mainView){
 }
 function projectElementReleased(event){
 	let clickDuration = Date.now() - mouseDownTime;
-	console.log("Target" + event.target)
+	console.log("Target: " + event.srcElement)
 	if(clickDuration > CLICK_THRESHOLD || event.button === 2 || event.srcElement == "a.icon.brands.fa-github" || event.srcElement == "a"){
 		return;
 	}
