@@ -148,7 +148,8 @@ function clearMainView(mainView){
 }
 function projectElementReleased(event){
 	let clickDuration = Date.now() - mouseDownTime;
-	if(clickDuration > CLICK_THRESHOLD || event.button === 2 || event.target == "a.icon.brands.fa-github"){
+	console.log("Target" + event.target)
+	if(clickDuration > CLICK_THRESHOLD || event.button === 2 || event.target == "a.icon.brands.fa-github" || event.target == "a"){
 		return;
 	}
 	console.log(event);
