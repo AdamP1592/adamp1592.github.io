@@ -121,7 +121,7 @@
 				});
 
 })(jQuery);
-const CLICK_THRESHOLD = 200; //ms
+const CLICK_THRESHOLD = 100; //ms
 var mouseDownTime = 0;
 let focusedElement = null;
 
@@ -132,11 +132,11 @@ function clearMainView(mainView){
 	console.log(mainView)
 	
 	if(mainView.classList.contains("focused")){
-
+		
 		let id = focusedElement.id
 		mainView.classList.remove("focused");
 		mainView.innerHTML = ""
-
+		
 		let projectElem = document.getElementById(id)
 		projectElem.style.display = "block"
 
@@ -148,10 +148,10 @@ function clearMainView(mainView){
 }
 function projectElementReleased(event){
 	let clickDuration = Date.now() - mouseDownTime;
-	if(clickDuration > CLICK_THRESHOLD || event.button === 2){
+	if(clickDuration > CLICK_THRESHOLD || event.button === 2 || event.target == "a.icon.brands.fa-github"){
 		return;
 	}
-
+	console.log(event);
 	let mainView = document.getElementById("mainView");
 
 	let element = event.target;
