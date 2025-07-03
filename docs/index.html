@@ -41,9 +41,9 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://github.com/AdamP1592" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://www.linkedin.com/in/adam-peterson-23b191157/" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
+							<li><a href="https://github.com/AdamP1592" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a></li>
+							<li><a href="#contact" class="icon solid fa-envelope" ><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/adam-peterson-23b191157/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">Dribbble</span></a></li>
 						</ul>
 
 				</div>
@@ -98,8 +98,8 @@
 												<strong>Project Description: </strong><br>
 												Simulates a 2D culture of corticospinal neurons using Hodgkin-Huxley membrane dynamics, fast (AMPA) synaptic models, and a geometric-overlap–based probabilistic model of synapse formation between axonal and dendritic fields. The system predicts steady-state membrane behavior under customizable external current input. A RESTful Flask API runs the simulation and streams results to a JavaScript frontend. The UI renders a live network map showing neurons, synapses, and connections, alongside synchronized graphs for input stimuli and membrane potential traces. Buffered rendering smooths playback and ensures responsiveness under limited system resources. Users can insert electrodes via the UI to observe how stimulus location and strength affect network dynamics.
 												<br>
-												<a href="https://adamp1592.pythonanywhere.com/home">Try the demo</a> and on Github here ->
-												<a href="https://github.com/AdamP1592/Network-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												<a href="https://adamp1592.pythonanywhere.com/home" target="_blank" rel="noopener noreferrer">Try the demo</a> and on Github here ->
+												<a href="https://github.com/AdamP1592/Network-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 										<article id = "neuralNetwork" class="item project">
@@ -118,7 +118,7 @@
 												<strong>Project Description: </strong><br>
 												Built a modular feedforward neural network framework in C++ entirely from scratch with no external libraries. Supports batch-based supervised learning using both standard gradient descent and RMSProp optimization, with configurable activation functions (Leaky ReLU, Tanh) and reference-based neuron connections. The framework is dataset-agnostic and validated on the Iris dataset to demonstrate core learning behavior. Includes a thread-safe, single-threaded custom logger for clean diagnostic output, and step-through CLI visualization of per-layer activations, error values, and expected outputs during training. JNI integration enables compatibility with external systems for hybrid AI workflows. Designed for robustness, maintainability, and integration into larger AI pipelines.<br>
 												Find the project here! ->
-												<a href="https://github.com/AdamP1592/Neural-Network" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												<a href="https://github.com/AdamP1592/Neural-Network" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 									</div>
@@ -137,7 +137,7 @@
 												Hodgkin-Huxley Neuron Model · Action Potential Threshold Fitting · Ion Channel Dynamics · Time-Step Integration · Current Injection Modeling · Interactive Signal Tuning<br>
 												<strong>Project Description: </strong><br>
 												Built a modular Hodgkin-Huxley simulator for exploring the effects of different current injection profiles on neuronal membrane behavior. Includes selectable input types with slider-controlled amplitude and frequency, and a built-in routine to identify action potential thresholds. Visualizations update dynamically to show membrane potential, gating variable dynamics, and input current in sync. Designed for modular integration into larger neural simulation frameworks while remaining lightweight and self-contained as an educational tool.<br>
-												Find the project here! -> <a href="https://github.com/AdamP1592/Neuron-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												Find the project here! -> <a href="https://github.com/AdamP1592/Neuron-Simulation" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 										<article id = "synapseGeneration" class="item project">
@@ -155,7 +155,7 @@
 												<strong>Project Description: </strong>
 												Developed a modular toolkit for generating neural connectivity from any specified neuron distribution, identifying probable synapse formation based on geometric overlap of axonal and dendritic projections. Connection probabilities follow an exponential function of intersection area, with synapse positions computed from centroid integrals. Implements the full Tsodyks–Markram model for short-term synaptic dynamics, including continuous recovery, facilitation, and spike-triggered updates. Recursive refinement and duplicate resolution ensure scalable, reliable connectivity generation. Designed for integration into larger neural simulation frameworks, like my corticospinal neuron simulation, supporting dynamic, probabilistic network construction for both demonstration and biologically informed models.<br>
 												Find the project here! -> 
-												<a href="https://github.com/AdamP1592/Synapse" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												<a href="https://github.com/AdamP1592/Synapse" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 									</div>
@@ -174,7 +174,7 @@
 												Maze Generation · Prim’s Algorithm · Breadth-First Search · Game State Management · Tile-Based Interaction · 2D Rendering<br>
 												<strong>Project Description: </strong><br>
 												A 2D puzzle game featuring procedurally generated mazes with tile-based interactions and directional player movement. Mazes are generated using a variant of Prim’s Algorithm, with the player placed at the furthest tile from a randomly assigned goal via breadth-first search. Each maze includes special tiles—red (heal), purple (pause), orange (damage over time)—that dynamically affect player health, displayed as a numeric overlay. Movement is player-controlled without assistive pathfinding. The game uses a modular entity system (Player, Goal, TrappedFloor) for extensible logic and visual behavior. Maze size and complexity are configurable at runtime for scalable generation. Built with Java Swing for GUI layout, input handling, and animated tile rendering.<br>
-												Find the project here! -> <a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												Find the project here! -> <a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 										<article id = "holdemDQN" class="item project">
@@ -191,7 +191,7 @@
 												Dueling Double Deep Q-Networks (D3QN) · Epsilon-Greedy Exploration · Q-Value Decomposition · Simulation-Based Training · Experience Replay Buffers · Evolutionary Reward Function Optimization · Temporal Difference Learning · Poker State Encoding<br>
 												<strong>Project Description: </strong><br>
 												Developed a reinforcement learning framework for Texas Hold’em Poker using a Dueling Double Deep Q-Network (D3QN) architecture. Each agent is assigned a unique reward weight vector applied to a shared reward function. After each generation of self-play, underperforming reward vectors are replaced by mutated versions of top performers. Agents are retrained with these new reward structures, evolving generalizable strategies across generations. The environment supports full betting logic, discrete action encoding, and CLI integration for training or manual testing. A batch script checks for Python installation and version compatibility at runtime—defaulting to a PyInstaller-built executable only if necessary—to ensure optimal performance across systems. <br>
-												Find the project here! -><a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a>
+												Find the project here! -><a href="https://github.com/AdamP1592/mazeGame" class="icon brands fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a>
 											</div>
 										</article>
 									</div>
@@ -259,7 +259,7 @@
 			<ul class="copyright">
 			  <li>&copy; Adam Peterson. All rights reserved.</li>
 			  <li>
-				Design adapted from <a href="https://html5up.net/prologue">Prologue by HTML5 UP</a>, licensed under
+				Design adapted from <a href="https://html5up.net/prologue" target="_blank" rel="noopener noreferrer">Prologue by HTML5 UP</a>, licensed under
 				<a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
 			  </li>
 			</ul>
