@@ -2681,3 +2681,6 @@ input, select, textarea {
 strong{
 	font-weight:500;
 }
+#about{
+	line-height:1.5;
+}
